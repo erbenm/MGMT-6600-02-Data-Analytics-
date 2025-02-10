@@ -29,7 +29,6 @@ nydata$BATH <- as.numeric(nydata$BATH)
 nydata <- na.omit(nydata)
 nydata <- nydata[nydata$PROPERTYSQFT!=2184.207862,]
 nydata$PROPERTYSQFT[nydata$BROKERTITLE=="Brokered by Douglas Elliman - 575 Madison Ave"][85]# print Model1 output
-??^
 #==========================================================================================
 ##MODEL1
 # Model 1: PRICE ~ PROPERTYSQFT
