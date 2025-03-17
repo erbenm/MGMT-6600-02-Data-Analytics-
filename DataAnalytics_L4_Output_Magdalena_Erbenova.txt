@@ -1,0 +1,102 @@
+##Principle Component Analysis (PCA) Summary
+
+Importance of components:
+                          Comp.1    Comp.2
+Standard deviation     2.1692972 1.5801816
+Proportion of Variance 0.3619885 0.1920749
+Cumulative Proportion  0.3619885 0.5540634
+                          Comp.3    Comp.4
+Standard deviation     1.2025273 0.9586313
+Proportion of Variance 0.1112363 0.0706903
+Cumulative Proportion  0.6652997 0.7359900
+                           Comp.5     Comp.6
+Standard deviation     0.92370351 0.80103498
+Proportion of Variance 0.06563294 0.04935823
+Cumulative Proportion  0.80162293 0.85098116
+                           Comp.7     Comp.8
+Standard deviation     0.74231281 0.59033665
+Proportion of Variance 0.04238679 0.02680749
+Cumulative Proportion  0.89336795 0.92017544
+                           Comp.9    Comp.10
+Standard deviation     0.53747553 0.50090167
+Proportion of Variance 0.02222153 0.01930019
+Cumulative Proportion  0.94239698 0.96169717
+                          Comp.11    Comp.12
+Standard deviation     0.47517222 0.41081655
+Proportion of Variance 0.01736836 0.01298233
+Cumulative Proportion  0.97906553 0.99204785
+                           Comp.13
+Standard deviation     0.321524394
+Proportion of Variance 0.007952149
+Cumulative Proportion  1.000000000
+
+
+"Top contributing variables to PC1:"
+                  Flavinoids 
+                   0.4229343 
+               Total.phenols 
+                   0.3946608 
+OD280.OD315.of.diluted.wines 
+                   0.3761674 
+             Proanthocyanins 
+                   0.3134295 
+        Nonflavanoid.phenols 
+                   0.2985331
+
+
+Importance of components(filtered):
+                          Comp.1    Comp.2
+Standard deviation     2.1630996 1.3147218
+Proportion of Variance 0.4253636 0.1571358
+Cumulative Proportion  0.4253636 0.5824994
+                           Comp.3     Comp.4
+Standard deviation     1.02311798 0.93288568
+Proportion of Variance 0.09516095 0.07911597
+Cumulative Proportion  0.67766035 0.75677633
+                           Comp.5     Comp.6
+Standard deviation     0.86000030 0.72697063
+Proportion of Variance 0.06723641 0.04804421
+Cumulative Proportion  0.82401274 0.87205695
+                           Comp.7     Comp.8
+Standard deviation     0.67580603 0.58191577
+Proportion of Variance 0.04151943 0.03078418
+Cumulative Proportion  0.91357638 0.94436056
+                          Comp.9    Comp.10
+Standard deviation     0.5189792 0.48283165
+Proportion of Variance 0.0244854 0.02119331
+Cumulative Proportion  0.9688460 0.99003927
+                          Comp.11
+Standard deviation     0.33101063
+Proportion of Variance 0.00996073
+Cumulative Proportion  1.00000000
+
+##KNN on Original Dataset
+        Actual
+Predicted  1  2  3
+        1  7  1  0
+        2  0 14  2
+        3  0  4  7
+
+[1] "Classification Metrics on Original Dataset:"
+     Recall Precision        F1
+1 0.8750000 1.0000000 0.9333333
+2 0.8750000 0.7368421 0.8000000
+3 0.6363636 0.7777778 0.7000000
+
+##KNN on PCA Scores
+        Actual
+Predicted  1  2  3
+        1  9  1  0
+        2  0 15  0
+        3  0  1  9
+
+[1] "Classification Metrics on PCA Scores:"
+  Recall Precision        F1
+1    0.9 1.0000000 0.9473684
+2    1.0 0.8823529 0.9375000
+3    0.9 1.0000000 0.9473684
+
+
+
+
+
